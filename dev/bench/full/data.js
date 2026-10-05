@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1790565856725,
+  "lastUpdate": 1791172342499,
   "repoUrl": "https://github.com/horizonanalytic/astrora",
   "entries": {
     "Benchmark": [
@@ -40866,6 +40866,840 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000043145271038108984",
             "extra": "mean: 780.3027931515691 usec\nrounds: 1402"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Joe Howarth",
+            "username": "JoeHowarth",
+            "email": "josephehowarth@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "f9dfb0553351970c1eee00f13e9120c571a99926",
+          "message": "Add Rust flags for macOS target configurations (#2)\n\nAdded target-specific Rust flags to prevent link errors on macOS.",
+          "timestamp": "2026-01-05T04:54:01Z",
+          "url": "https://github.com/horizonanalytic/astrora/commit/f9dfb0553351970c1eee00f13e9120c571a99926"
+        },
+        "date": 1791172341311,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_rust_vs_numpy[tiny]",
+            "value": 5627200.484670368,
+            "unit": "iter/sec",
+            "range": "stddev: 1.8194562809249912e-8",
+            "extra": "mean: 177.70825879130948 nsec\nrounds: 57127"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_rust_vs_numpy[small]",
+            "value": 5108165.417250967,
+            "unit": "iter/sec",
+            "range": "stddev: 1.6382183246715183e-8",
+            "extra": "mean: 195.76499943067103 nsec\nrounds: 52638"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_rust_vs_numpy[medium]",
+            "value": 3163957.943233174,
+            "unit": "iter/sec",
+            "range": "stddev: 4.108268072486991e-8",
+            "extra": "mean: 316.05982694510874 nsec\nrounds: 192753"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_rust_vs_numpy[large]",
+            "value": 634033.0640521939,
+            "unit": "iter/sec",
+            "range": "stddev: 1.1547018080333491e-7",
+            "extra": "mean: 1.577204812646313 usec\nrounds: 65224"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_rust_vs_numpy[very_large]",
+            "value": 69724.39164856919,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001417966580396359",
+            "extra": "mean: 14.3421832210496 usec\nrounds: 71995"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_numpy_baseline[tiny]",
+            "value": 409263.823226324,
+            "unit": "iter/sec",
+            "range": "stddev: 1.6575141652177946e-7",
+            "extra": "mean: 2.443411665650687 usec\nrounds: 42818"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_numpy_baseline[small]",
+            "value": 402802.9941535479,
+            "unit": "iter/sec",
+            "range": "stddev: 1.7270877114923421e-7",
+            "extra": "mean: 2.482603194401276 usec\nrounds: 42418"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_numpy_baseline[medium]",
+            "value": 355150.0855716688,
+            "unit": "iter/sec",
+            "range": "stddev: 5.039998806695864e-7",
+            "extra": "mean: 2.815710992692979 usec\nrounds: 191682"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_numpy_baseline[large]",
+            "value": 213576.36920457447,
+            "unit": "iter/sec",
+            "range": "stddev: 4.677376793897712e-7",
+            "extra": "mean: 4.682165933077307 usec\nrounds: 111322"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_sum_array_numpy_baseline[very_large]",
+            "value": 39436.11770658805,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005052250973410836",
+            "extra": "mean: 25.35746564710511 usec\nrounds: 41263"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_rust_vs_numpy[tiny]",
+            "value": 3883615.16372865,
+            "unit": "iter/sec",
+            "range": "stddev: 3.419296854066527e-8",
+            "extra": "mean: 257.4920422959019 nsec\nrounds: 190223"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_rust_vs_numpy[small]",
+            "value": 3653338.3795022215,
+            "unit": "iter/sec",
+            "range": "stddev: 3.7663412280346495e-8",
+            "extra": "mean: 273.7222496583838 nsec\nrounds: 198531"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_rust_vs_numpy[medium]",
+            "value": 2198656.1293137777,
+            "unit": "iter/sec",
+            "range": "stddev: 6.285328951963596e-8",
+            "extra": "mean: 454.8232834900385 nsec\nrounds: 189862"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_rust_vs_numpy[large]",
+            "value": 461043.4586560616,
+            "unit": "iter/sec",
+            "range": "stddev: 2.6370720501056567e-7",
+            "extra": "mean: 2.168992925124664 usec\nrounds: 47280"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_numpy_baseline[tiny]",
+            "value": 1549780.9642575295,
+            "unit": "iter/sec",
+            "range": "stddev: 8.769785509995537e-8",
+            "extra": "mean: 645.2524731319235 nsec\nrounds: 161839"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_numpy_baseline[small]",
+            "value": 1525402.8651276524,
+            "unit": "iter/sec",
+            "range": "stddev: 8.674492713866415e-8",
+            "extra": "mean: 655.564521911589 nsec\nrounds: 159008"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_numpy_baseline[medium]",
+            "value": 1262368.544994639,
+            "unit": "iter/sec",
+            "range": "stddev: 9.392749452686821e-8",
+            "extra": "mean: 792.1616899954169 nsec\nrounds: 132083"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_dot_product_numpy_baseline[large]",
+            "value": 396433.7634801614,
+            "unit": "iter/sec",
+            "range": "stddev: 3.114319978732407e-7",
+            "extra": "mean: 2.5224894853086113 usec\nrounds: 136222"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_vector_magnitude_rust",
+            "value": 2696577.5600393866,
+            "unit": "iter/sec",
+            "range": "stddev: 5.20087557855906e-8",
+            "extra": "mean: 370.8404367146819 nsec\nrounds: 198926"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestReadOnlyOperationsOverhead::test_vector_magnitude_numpy_baseline",
+            "value": 620682.6484201297,
+            "unit": "iter/sec",
+            "range": "stddev: 1.325182622690835e-7",
+            "extra": "mean: 1.6111292985962387 usec\nrounds: 64713"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_rust[tiny]",
+            "value": 3455020.8914147303,
+            "unit": "iter/sec",
+            "range": "stddev: 3.955167994632044e-8",
+            "extra": "mean: 289.4338504535742 nsec\nrounds: 196967"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_rust[small]",
+            "value": 3218216.065467927,
+            "unit": "iter/sec",
+            "range": "stddev: 4.588143557716568e-8",
+            "extra": "mean: 310.7311565342632 nsec\nrounds: 197707"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_rust[medium]",
+            "value": 1901906.0224741462,
+            "unit": "iter/sec",
+            "range": "stddev: 7.251595089121198e-8",
+            "extra": "mean: 525.7883345356354 nsec\nrounds: 197746"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_rust[large]",
+            "value": 455254.2380932275,
+            "unit": "iter/sec",
+            "range": "stddev: 1.5574802117350432e-7",
+            "extra": "mean: 2.196574828580132 usec\nrounds: 46378"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_rust[very_large]",
+            "value": 44508.965314495836,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002455765484860464",
+            "extra": "mean: 22.467383659316756 usec\nrounds: 46424"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_numpy_baseline[tiny]",
+            "value": 1204986.7937782628,
+            "unit": "iter/sec",
+            "range": "stddev: 9.432097849148616e-8",
+            "extra": "mean: 829.8846138092858 nsec\nrounds: 126711"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_numpy_baseline[small]",
+            "value": 1178151.4643448705,
+            "unit": "iter/sec",
+            "range": "stddev: 9.224345378326632e-8",
+            "extra": "mean: 848.7872996500084 nsec\nrounds: 124658"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_numpy_baseline[medium]",
+            "value": 891627.6932452566,
+            "unit": "iter/sec",
+            "range": "stddev: 1.0779360631646934e-7",
+            "extra": "mean: 1.121544348135164 usec\nrounds: 93677"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_numpy_baseline[large]",
+            "value": 332328.8902536444,
+            "unit": "iter/sec",
+            "range": "stddev: 3.9287072561408706e-7",
+            "extra": "mean: 3.0090673105090775 usec\nrounds: 173071"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_multiply_scalar_numpy_baseline[very_large]",
+            "value": 41053.38576786967,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000021437270318880148",
+            "extra": "mean: 24.358526861934184 usec\nrounds: 42402"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_rust[tiny]",
+            "value": 3145000.1835813066,
+            "unit": "iter/sec",
+            "range": "stddev: 4.3294491879465784e-8",
+            "extra": "mean: 317.9650052869807 nsec\nrounds: 192382"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_rust[small]",
+            "value": 2395871.5585748814,
+            "unit": "iter/sec",
+            "range": "stddev: 5.8793122867309945e-8",
+            "extra": "mean: 417.3846450244482 nsec\nrounds: 189466"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_rust[medium]",
+            "value": 708896.6304862662,
+            "unit": "iter/sec",
+            "range": "stddev: 1.1563456413787315e-7",
+            "extra": "mean: 1.4106429019334494 usec\nrounds: 74633"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_rust[large]",
+            "value": 90020.83440971533,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010891984572666804",
+            "extra": "mean: 11.108539557061436 usec\nrounds: 98377"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_numpy_baseline[tiny]",
+            "value": 454366.25395121117,
+            "unit": "iter/sec",
+            "range": "stddev: 1.7555910759647373e-7",
+            "extra": "mean: 2.2008676729486893 usec\nrounds: 47369"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_numpy_baseline[small]",
+            "value": 446080.697488469,
+            "unit": "iter/sec",
+            "range": "stddev: 1.6187346710501796e-7",
+            "extra": "mean: 2.241746853495825 usec\nrounds: 46925"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_numpy_baseline[medium]",
+            "value": 330575.3715967922,
+            "unit": "iter/sec",
+            "range": "stddev: 4.7436323715718677e-7",
+            "extra": "mean: 3.025028740555165 usec\nrounds: 175501"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestArrayReturnOverhead::test_normalize_vector_numpy_baseline[large]",
+            "value": 130403.64346190078,
+            "unit": "iter/sec",
+            "range": "stddev: 9.391196681894064e-7",
+            "extra": "mean: 7.668497393572932 usec\nrounds: 138122"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_rust[tiny]",
+            "value": 2781099.645037614,
+            "unit": "iter/sec",
+            "range": "stddev: 6.026606051003596e-7",
+            "extra": "mean: 359.57000022790453 nsec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_rust[small]",
+            "value": 2848110.268250044,
+            "unit": "iter/sec",
+            "range": "stddev: 2.418589582198254e-7",
+            "extra": "mean: 351.11000130427783 nsec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_rust[medium]",
+            "value": 1797849.7719716574,
+            "unit": "iter/sec",
+            "range": "stddev: 1.8969297820480468e-7",
+            "extra": "mean: 556.2199999076256 nsec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_rust[large]",
+            "value": 458421.1973040555,
+            "unit": "iter/sec",
+            "range": "stddev: 2.019453378381022e-7",
+            "extra": "mean: 2.181400000438316 usec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_rust[very_large]",
+            "value": 50690.24911879054,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000022871044151819504",
+            "extra": "mean: 19.727660001365166 usec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_numpy_baseline[tiny]",
+            "value": 840555.1027978392,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000016996149281139786",
+            "extra": "mean: 1.1896899997054788 usec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_numpy_baseline[small]",
+            "value": 932174.950891473,
+            "unit": "iter/sec",
+            "range": "stddev: 4.7200308349459964e-7",
+            "extra": "mean: 1.0727599996585013 usec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_numpy_baseline[medium]",
+            "value": 744318.9844793829,
+            "unit": "iter/sec",
+            "range": "stddev: 4.952023652096329e-7",
+            "extra": "mean: 1.3435100015612988 usec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_numpy_baseline[large]",
+            "value": 397804.1208319884,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001010226898720557",
+            "extra": "mean: 2.513800002645894 usec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestInPlaceOperationsOverhead::test_multiply_scalar_inplace_numpy_baseline[very_large]",
+            "value": 62903.64482802346,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000025246237159451466",
+            "extra": "mean: 15.89732999946136 usec\nrounds: 100"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_rust[10]",
+            "value": 1735109.578002111,
+            "unit": "iter/sec",
+            "range": "stddev: 7.706461052736206e-8",
+            "extra": "mean: 576.3324764488007 nsec\nrounds: 188395"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_rust[100]",
+            "value": 379555.65923409804,
+            "unit": "iter/sec",
+            "range": "stddev: 4.094084427965824e-7",
+            "extra": "mean: 2.634659701867945 usec\nrounds: 196967"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_rust[1000]",
+            "value": 44928.27722347333,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001536538471011898",
+            "extra": "mean: 22.257697419066357 usec\nrounds: 46186"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_rust[10000]",
+            "value": 4581.406717060586,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007563682464074686",
+            "extra": "mean: 218.273570053522 usec\nrounds: 4675"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_numpy_baseline[10]",
+            "value": 214295.79124760046,
+            "unit": "iter/sec",
+            "range": "stddev: 4.802058957562823e-7",
+            "extra": "mean: 4.666447223149546 usec\nrounds: 112322"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_numpy_baseline[100]",
+            "value": 137443.78458729608,
+            "unit": "iter/sec",
+            "range": "stddev: 8.127556241394857e-7",
+            "extra": "mean: 7.275701866058991 usec\nrounds: 144093"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_numpy_baseline[1000]",
+            "value": 31934.917127300327,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000017606708507014151",
+            "extra": "mean: 31.31368702206921 usec\nrounds: 32686"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_batch_normalize_numpy_baseline[10000]",
+            "value": 3670.6400067011978,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005538779460423516",
+            "extra": "mean: 272.4320549480142 usec\nrounds: 3749"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_sequential_normalize_rust[10]",
+            "value": 148341.48629911823,
+            "unit": "iter/sec",
+            "range": "stddev: 9.734635822143734e-7",
+            "extra": "mean: 6.741202511504997 usec\nrounds: 157754"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_sequential_normalize_rust[100]",
+            "value": 17784.207515842467,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000027250396077415138",
+            "extra": "mean: 56.22966326214893 usec\nrounds: 18798"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBatchOperationsScaling::test_sequential_normalize_rust[1000]",
+            "value": 1763.6619751977978,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009121311953098552",
+            "extra": "mean: 567.0020752632308 usec\nrounds: 1807"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_rust[10]",
+            "value": 1311472.7072699433,
+            "unit": "iter/sec",
+            "range": "stddev: 8.834095453260181e-8",
+            "extra": "mean: 762.5015712920801 nsec\nrounds: 138103"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_rust[50]",
+            "value": 102339.84957385773,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010478405895675357",
+            "extra": "mean: 9.771364763227535 usec\nrounds: 104232"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_rust[100]",
+            "value": 16856.299376746218,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000025023482952814353",
+            "extra": "mean: 59.325002341826625 usec\nrounds: 17081"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_rust[200]",
+            "value": 2324.1823809359,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000026696698202291447",
+            "extra": "mean: 430.2588334730086 usec\nrounds: 2384"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_numpy_baseline[10]",
+            "value": 671476.5926858004,
+            "unit": "iter/sec",
+            "range": "stddev: 1.2159530407282013e-7",
+            "extra": "mean: 1.489255189075394 usec\nrounds: 70369"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_numpy_baseline[50]",
+            "value": 102233.49460436104,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014304835956566811",
+            "extra": "mean: 9.78153005401952 usec\nrounds: 104778"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_numpy_baseline[100]",
+            "value": 18386.332353125294,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003016830642056136",
+            "extra": "mean: 54.388226036282916 usec\nrounds: 20218"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_multiply_numpy_baseline[200]",
+            "value": 3736.5286625923127,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000041152032831335464",
+            "extra": "mean: 267.62808218530415 usec\nrounds: 4283"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_rust[10]",
+            "value": 2332622.2961208546,
+            "unit": "iter/sec",
+            "range": "stddev: 6.053788629893895e-8",
+            "extra": "mean: 428.70206705259994 nsec\nrounds: 188395"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_rust[50]",
+            "value": 987392.5045179587,
+            "unit": "iter/sec",
+            "range": "stddev: 1.025005583241022e-7",
+            "extra": "mean: 1.0127684739598146 usec\nrounds: 101792"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_rust[100]",
+            "value": 356592.185006907,
+            "unit": "iter/sec",
+            "range": "stddev: 3.827720915851273e-7",
+            "extra": "mean: 2.8043239365456945 usec\nrounds: 183218"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_rust[200]",
+            "value": 114765.07074489024,
+            "unit": "iter/sec",
+            "range": "stddev: 9.68341028143651e-7",
+            "extra": "mean: 8.713452564525374 usec\nrounds: 117897"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_numpy_baseline[10]",
+            "value": 841695.5541680112,
+            "unit": "iter/sec",
+            "range": "stddev: 1.0489560063786947e-7",
+            "extra": "mean: 1.188078034923782 usec\nrounds: 89961"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_numpy_baseline[50]",
+            "value": 671335.3735122518,
+            "unit": "iter/sec",
+            "range": "stddev: 1.3026271808738518e-7",
+            "extra": "mean: 1.4895684622847487 usec\nrounds: 70468"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_numpy_baseline[100]",
+            "value": 416075.405708074,
+            "unit": "iter/sec",
+            "range": "stddev: 1.7273896598049e-7",
+            "extra": "mean: 2.4034105027145682 usec\nrounds: 43227"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestMatrixOperationsOverhead::test_matrix_vector_multiply_numpy_baseline[200]",
+            "value": 174148.66507400377,
+            "unit": "iter/sec",
+            "range": "stddev: 7.754083664392249e-7",
+            "extra": "mean: 5.742220301114878 usec\nrounds: 180571"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBoundaryCrossingOverhead::test_minimal_rust_call",
+            "value": 5285687.960975142,
+            "unit": "iter/sec",
+            "range": "stddev: 1.3920356106525551e-8",
+            "extra": "mean: 189.19013142338483 nsec\nrounds: 59578"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBoundaryCrossingOverhead::test_minimal_numpy_call",
+            "value": 410903.011489597,
+            "unit": "iter/sec",
+            "range": "stddev: 1.6441306821861088e-7",
+            "extra": "mean: 2.4336643247631953 usec\nrounds: 42985"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBoundaryCrossingOverhead::test_repeated_tiny_calls_rust",
+            "value": 55273.58740500822,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000013737490524739833",
+            "extra": "mean: 18.091823725365654 usec\nrounds: 57921"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBoundaryCrossingOverhead::test_repeated_tiny_calls_numpy",
+            "value": 4127.3072422764,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006061591606049973",
+            "extra": "mean: 242.28872271899337 usec\nrounds: 4252"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBoundaryCrossingOverhead::test_single_large_call_rust",
+            "value": 4573307.65853184,
+            "unit": "iter/sec",
+            "range": "stddev: 1.4785926762936001e-8",
+            "extra": "mean: 218.66011969139808 nsec\nrounds: 45868"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestBoundaryCrossingOverhead::test_single_large_call_numpy",
+            "value": 389614.6916976776,
+            "unit": "iter/sec",
+            "range": "stddev: 4.492411557657406e-7",
+            "extra": "mean: 2.5666383257845538 usec\nrounds: 41536"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_cross_product_rust",
+            "value": 2726981.8737903875,
+            "unit": "iter/sec",
+            "range": "stddev: 4.8872511541111265e-8",
+            "extra": "mean: 366.70577447233325 nsec\nrounds: 190586"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_cross_product_numpy_baseline",
+            "value": 49852.52415075829,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004173659805346992",
+            "extra": "mean: 20.05916484741905 usec\nrounds: 51393"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_batch_cross_product_simulation[10]",
+            "value": 121591.50393146522,
+            "unit": "iter/sec",
+            "range": "stddev: 9.927326969078705e-7",
+            "extra": "mean: 8.224258831140435 usec\nrounds: 130023"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_batch_cross_product_simulation[100]",
+            "value": 14129.57702954302,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010227427674055211",
+            "extra": "mean: 70.7735269009919 usec\nrounds: 15111"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_batch_cross_product_simulation[1000]",
+            "value": 1419.2789877226853,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00006403414037385797",
+            "extra": "mean: 704.5831077965562 usec\nrounds: 1475"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_batch_cross_product_numpy_baseline[10]",
+            "value": 53657.201042457535,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000027030969004193997",
+            "extra": "mean: 18.636827500724948 usec\nrounds: 56864"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_batch_cross_product_numpy_baseline[100]",
+            "value": 51752.75278450791,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000001676668163881842",
+            "extra": "mean: 19.322643650742155 usec\nrounds: 54180"
+          },
+          {
+            "name": "tests/benchmark_numpy_overhead.py::TestCrossProductOperations::test_batch_cross_product_numpy_baseline[1000]",
+            "value": 37018.97665419565,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000020156571301180177",
+            "extra": "mean: 27.013172442373886 usec\nrounds: 38523"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_batch_mean_to_eccentric_small",
+            "value": 68197.42103147636,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005938950647366578",
+            "extra": "mean: 14.663311088236785 usec\nrounds: 137723"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_sequential_mean_to_eccentric_small",
+            "value": 246526.8777820411,
+            "unit": "iter/sec",
+            "range": "stddev: 4.91598217348571e-7",
+            "extra": "mean: 4.056352836643306 usec\nrounds: 128337"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_batch_mean_to_eccentric_medium",
+            "value": 38183.85105365777,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005409971063768431",
+            "extra": "mean: 26.189081834484227 usec\nrounds: 48757"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_sequential_mean_to_eccentric_medium",
+            "value": 32256.115454410326,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002001486606280894",
+            "extra": "mean: 31.001873161489804 usec\nrounds: 33318"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_batch_mean_to_eccentric_large",
+            "value": 11339.629937256814,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000010699042215867785",
+            "extra": "mean: 88.18629933543593 usec\nrounds: 13540"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_sequential_mean_to_eccentric_large",
+            "value": 3234.6486199008955,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000008687586944555962",
+            "extra": "mean: 309.1525904382895 usec\nrounds: 3284"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_batch_mean_to_true_medium",
+            "value": 20484.71925571183,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004554686266481993",
+            "extra": "mean: 48.81687600971961 usec\nrounds: 24510"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_sequential_mean_to_true_medium",
+            "value": 27738.282484743042,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000020657662154130244",
+            "extra": "mean: 36.05125878107386 usec\nrounds: 28727"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_batch_variable_eccentricities",
+            "value": 37423.09023912407,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000006897665048479041",
+            "extra": "mean: 26.721470450736522 usec\nrounds: 47937"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchEllipticalBenchmark::test_benchmark_sequential_variable_eccentricities",
+            "value": 26193.995442826938,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000021515634094663145",
+            "extra": "mean: 38.176688324722285 usec\nrounds: 26980"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchHyperbolicBenchmark::test_benchmark_batch_mean_to_hyperbolic_medium",
+            "value": 31990.943209147128,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004742653691641476",
+            "extra": "mean: 31.25884702624433 usec\nrounds: 39144"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchHyperbolicBenchmark::test_benchmark_sequential_mean_to_hyperbolic_medium",
+            "value": 22093.61358718325,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002296272652012565",
+            "extra": "mean: 45.2619484836157 usec\nrounds: 22653"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchHyperbolicBenchmark::test_benchmark_batch_mean_to_true_hyperbolic",
+            "value": 18369.589282095203,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000011785872632897807",
+            "extra": "mean: 54.43779850726971 usec\nrounds: 22244"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchHyperbolicBenchmark::test_benchmark_sequential_mean_to_true_hyperbolic",
+            "value": 21071.886976485297,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002458558532352656",
+            "extra": "mean: 47.45659470914626 usec\nrounds: 21661"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchParabolicBenchmark::test_benchmark_batch_mean_to_true_parabolic",
+            "value": 42780.33242338115,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000005627814285301137",
+            "extra": "mean: 23.37522743169383 usec\nrounds: 56351"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchParabolicBenchmark::test_benchmark_sequential_mean_to_true_parabolic",
+            "value": 45383.769873329424,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000050178309210180955",
+            "extra": "mean: 22.034308802267827 usec\nrounds: 47124"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchLargeScaleBenchmark::test_benchmark_batch_constellation_analysis",
+            "value": 5684.546486414342,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000014432117368859997",
+            "extra": "mean: 175.91552859844285 usec\nrounds: 6941"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchLargeScaleBenchmark::test_benchmark_sequential_constellation_analysis",
+            "value": 897.4610738157369,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00001550944542087748",
+            "extra": "mean: 1.114254455347348 msec\nrounds: 907"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchLargeScaleBenchmark::test_benchmark_batch_propagation_grid",
+            "value": 1132.9431262011235,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000051268063540713894",
+            "extra": "mean: 882.656840289154 usec\nrounds: 1246"
+          },
+          {
+            "name": "tests/benchmark_batch_anomaly.py::TestBatchLargeScaleBenchmark::test_benchmark_sequential_propagation_grid",
+            "value": 263.4501782747101,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002513762006715162",
+            "extra": "mean: 3.7957841082091046 msec\nrounds: 268"
+          },
+          {
+            "name": "tests/benchmark_parallel_batch.py::TestParallelBatchPerformance::test_batch_propagation_small",
+            "value": 67351.18758702542,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003997383893012328",
+            "extra": "mean: 14.847548140229687 usec\nrounds: 114509"
+          },
+          {
+            "name": "tests/benchmark_parallel_batch.py::TestParallelBatchPerformance::test_batch_propagation_medium",
+            "value": 30757.91498810719,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000474711360840756",
+            "extra": "mean: 32.51195669103899 usec\nrounds: 37752"
+          },
+          {
+            "name": "tests/benchmark_parallel_batch.py::TestParallelBatchPerformance::test_batch_propagation_large",
+            "value": 7545.000278540761,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018762549514530312",
+            "extra": "mean: 132.5380998121586 usec\nrounds: 8526"
+          },
+          {
+            "name": "tests/benchmark_parallel_batch.py::TestParallelBatchPerformance::test_batch_propagation_very_large",
+            "value": 1656.999053460638,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000536042302948833",
+            "extra": "mean: 603.5006464919234 usec\nrounds: 1867"
+          },
+          {
+            "name": "tests/benchmark_parallel_batch.py::TestParallelBatchPerformance::test_batch_anomaly_conversion_small",
+            "value": 38229.943587749156,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000033953376224714757",
+            "extra": "mean: 26.157506555161426 usec\nrounds: 48589"
+          },
+          {
+            "name": "tests/benchmark_parallel_batch.py::TestParallelBatchPerformance::test_batch_anomaly_conversion_large",
+            "value": 1841.6557424434604,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000036522190862269166",
+            "extra": "mean: 542.989646193716 usec\nrounds: 1970"
+          },
+          {
+            "name": "tests/benchmark_parallel_batch.py::TestParallelBatchPerformance::test_batch_mean_to_true_large",
+            "value": 1243.0673085020092,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000027374391013228143",
+            "extra": "mean: 804.461667651027 usec\nrounds: 1354"
           }
         ]
       }
